@@ -2,6 +2,7 @@
 .github-profile {
 	  margin: 1rem;
 }
+
 img {
     width: 75px;
   }
@@ -13,17 +14,32 @@ img {
 .name {
     	font-size: 1.25rem;
       font-weight: bold;
-    }
+ }
   
 
-
 form {
-	border: thin solid #ddd;
+  border: thin solid #ddd;
   background-color: #fbfbfb;
   padding: 2rem;
   margin-bottom: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+}
+
+.input{
+  margin-right: 20px;
+  height: 30px;
+  width: 500px;
+  border-color: black;
+  font-size: medium;
+  border-radius: 5px;
+}
+.butn{
+  background-color: black;
+  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+  
 }
 
 
