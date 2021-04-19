@@ -59,8 +59,6 @@ class Card extends React.Component{
             <div className="name">{profile.name}</div>
             <div>{profile.company}</div>
             <div>Bio : {profile.bio}</div>
-            <div>Public Repo : {profile.public_repo}</div>
-            <div>Public Gist :{profile.public_gist}</div>
             <div>Followers : {profile.followers}</div>
             <div>Following : {profile.following}</div>
             <div><a href={`https://github.com/${userVal.userN}`} className="link">Go to GitHub Repo </a></div>
