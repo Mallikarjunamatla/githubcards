@@ -42,11 +42,11 @@ class Form extends React.Component{
     return(
       <form onSubmit={this.handleSubmit} className="form"  >
         <input type="text" placeholder="Enter username"
-         value={this.state.userName} 
+         value={this.state.userName} className="input"
          onChange={ event => this.setState({userName : event.target.value})} 
          required
          />
-        <button className="butn"  style={{color : 'blue'}}>Search</button>
+        <button className="butn" >Search</button>
       </form>
     )
   }
