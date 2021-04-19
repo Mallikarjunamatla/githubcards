@@ -4,6 +4,8 @@ import axios from 'axios';
 
 //const axios = require('axios');
 
+/* CardList is function component holds List of retrieved users
+* <Card /> component holds info of a queried user and input value accepted from a user */
 
 const CardList = (props) => (
   <div>
@@ -11,15 +13,20 @@ const CardList = (props) => (
   </div>
 );
 
+/* Form is Class Component to Capture input from User and Retrieve User profile 
+* with the help of Ajax calls (async and await calls) */
+
 
 class Form extends React.Component{
 
   constructor(props){
+    //Holds State of Form Component i.e Data 
     super(props);
     this.state= {
                 userName : '',
                };
     this.handleSubmit=async (event) => {
+      // Prevents refreshing page at every time user inputs
       event.preventDefault();
       const resp= await 
       axios.get(`https://api.github.com/users/${this.state.userName}`);
@@ -45,11 +52,13 @@ class Form extends React.Component{
   }
 }
 
+//Card class component to hold Profile Details of a user
+
 class Card extends React.Component{
     render(){
       const profile=this.props;
       const userVal= this.props;
-      console.log(userVal.userN);
+      //console.log(userVal.userN);
       //const url=`${userVal.userN}`;
       
       return(
@@ -70,6 +79,7 @@ class Card extends React.Component{
     }
 }
 
+// App class component. It is a parent Component to all other components defined
 
 class App extends React.Component{
 
