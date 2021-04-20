@@ -1,31 +1,33 @@
 
 .github-profile {
 	  margin: 1rem;
-}
+    display: inline-flex;
 
-img {
+}
+.image {
     width: 75px;
   }
 
 .info{
     display: inline-block;
     margin-left: 12px;
+    
 }
 .name {
     	font-size: 1.25rem;
       font-weight: bold;
- }
+    }
   
 
+
 form {
-  border: thin solid #ddd;
+	border: thin solid #ddd;
   background-color: #fbfbfb;
   padding: 2rem;
   margin-bottom: 2rem;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
-
 .input{
   margin-right: 20px;
   height: 30px;
@@ -40,6 +42,24 @@ form {
   font-size: medium;
   font-weight: bold;
   
+}
+
+.link{
+
+  width: fit-content;
+  border: 1px  thin #000;
+  background: #000;;
+  border-radius: 5px;
+
+}
+.url{
+  color: #fff;
+  list-style:none;
+  text-decoration: none;
+  padding: 5px,5px;
+}
+.url:hover{
+  color: lime;
 }
 
 
