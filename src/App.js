@@ -63,14 +63,17 @@ class Card extends React.Component{
       
       return(
         <div className="github-profile">
-          <img src={profile.avatar_url} alt="photo"/>
+          
           <div className="info">
+            <div><img src={profile.avatar_url} className="image" alt="photo"/></div>
             <div className="name">{profile.name}</div>
             <div>{profile.company}</div>
             <div>Bio : {profile.bio}</div>
             <div>Followers : {profile.followers}</div>
             <div>Following : {profile.following}</div>
-            <div><a href={`https://github.com/${userVal.userN}`} className="link">Go to GitHub Repo </a></div>
+            <div>Public repos : {profile.public_repos}</div>
+            <div>Public Gists : {profile.public_gists}</div>
+            <div className="link"><a href={`${profile.html_url}`} target='_blank' className="url"> Go to Repository</a></div>
 
           </div>
 
