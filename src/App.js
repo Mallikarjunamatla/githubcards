@@ -41,7 +41,7 @@ class Form extends React.Component{
 
     return(
       <form onSubmit={this.handleSubmit} className="form"  >
-        <input type="text" placeholder="Please enter valid username"
+        <input type="text" placeholder="Please enter a valid username"
          value={this.state.userName} className="input"
          onChange={ event => this.setState({userName : event.target.value})} 
          required
